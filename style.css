@@ -50,7 +50,7 @@ header {
 .translation {
 	flex-direction: row-reverse;
 	margin: 15px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .logo {
@@ -86,7 +86,7 @@ nav {
 
 .bar {
 	color: #000;
-	font-size: 25px;
+	font-size: 30px;
 	padding: 0 10px;
 }
 
@@ -186,6 +186,12 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1240px) {
+	nav ul li a {
+		padding: 0 10px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	header {
 		background: #fff;
@@ -209,6 +215,10 @@ footer {
 		grid-column-start: 1;
 		grid-column-end: 4;
 		margin: 0 0 10px;
+	}
+
+	.logoBox {
+		font-size: 25px;
 	}
 
 	nav ul {
@@ -237,6 +247,7 @@ footer {
 
 	nav ul li a {
 		display: flex;
+		font-size: 25px;
 	}
 }
 
