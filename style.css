@@ -91,7 +91,9 @@ nav {
 }
 
 nav ul li {
-	padding: 8px 0;
+	/*padding: 8px 0;*/
+	/*padding: 13px;*/
+	display: flex;
 	background: #364c79;
 }
 
@@ -107,7 +109,9 @@ nav ul li:hover {
 
 nav ul li a {
 	color: #fff;
-	padding: 15px;
+	padding: 10px;
+	align-self: center;
+	/*padding: 15px;*/
 }
 
 /*img slider area*/
