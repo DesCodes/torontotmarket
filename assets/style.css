@@ -114,10 +114,14 @@ nav ul li:last-child {
 nav ul li:hover {
 	background: #b16f8a;
 	text-decoration: underline;
-	color: #fff;
+	/*color: #fff;*/
 }
 
-nav ul li a {
+nav ul li p {
+	cursor: pointer;
+}
+
+nav ul li a, nav ul li p {
 	/*color: #fff;*/
 	color: #000;
 	padding: 10px;
@@ -126,15 +130,43 @@ nav ul li a {
 	/*padding: 15px;*/
 }
 
+
+
+/*announcement bar*/
+.announcementBar {
+	margin: 0 55px;
+}
+
+.announcementBar h2 {
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+	background: rgb(131,58,180);
+	background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
+
 /*img slider area*/
 .flickity-viewport {
 	/*height: 68vh !important; */
 }
+
+.imgSlider {
+	margin: 8px auto;
+}
+
 .imgSlider img {
 	max-height: 700px;
 /*	max-width: 100%;
 	max-height: 100%;
 	height: auto;*/
+}
+
+.main-carousel {
+	padding: 0 55px;
 }
 
 
@@ -186,6 +218,68 @@ footer {
 
 
 
+/*contact us*/
+.contactUs {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+	background: #f2f1f1;
+	left: 0;
+	right: 0;
+	top: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+}
+
+.showContactUs {
+	display: block;
+}
+.contactUs .contactHeader {
+	/*display: inline-block;*/
+}
+
+.contactHeader h3 {
+	text-align: center;
+	padding: 15px;
+}
+
+.contactHeader .closeBox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 7px 8px;
+	cursor: pointer;
+}
+
+.contactUs form {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	padding: 25px;
+}
+
+.contactUs form input {
+	padding: 10px;
+}
+
+.contactUs form textarea {
+	resize: none;
+	padding: 15px 10px;
+}
+
+.contactUs form textarea, .contactUs form button[type='submit'] {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.contactUs form button[type='submit'] {
+	padding: 8px;
+}
+
+
+
 @media screen and (max-width: 1800px) {
  .wrapper {
  	width: 85%;
@@ -203,7 +297,7 @@ footer {
 }
 
 @media screen and (max-width: 1240px) {
-	nav ul li a {
+	nav ul li a, nav ul li p {
 		padding: 0 10px;
 	}
 }
@@ -263,7 +357,7 @@ footer {
 		display: block;
 	}
 
-	nav ul li a {
+	nav ul li a, nav ul li p {
 		display: flex;
 		font-size: 25px;
 	}
@@ -284,7 +378,7 @@ footer {
 		font-size: 30px;
 	}
 
-	nav ul li a {
+	nav ul li a, nav ul li p {
 		font-size: 25px;
 	}
 
