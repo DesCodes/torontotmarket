@@ -230,7 +230,8 @@ footer {
 	top: 35%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 500px;
+	max-width: 600px;
+	border-radius: 5px;
 }
 
 .showContactUs {
@@ -253,11 +254,22 @@ footer {
 	cursor: pointer;
 }
 
+.contactHeader .closeBox i,
+.contactHeader h3 {
+	font-size: 20px;
+}
+
 .contactUs form {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 1fr 1fr;
 	padding: 25px;
+}
+
+.contactUs form input, 
+.contactUs form textarea, 
+.contactUs form button {
+	font-size: 18px;
 }
 
 .contactUs form input {
