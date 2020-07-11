@@ -264,6 +264,8 @@ footer {
 	grid-gap: 10px;
 	grid-template-columns: 1fr 1fr;
 	padding: 25px;
+	margin: 5px;
+	box-sizing: border-box;
 }
 
 .contactUs form input, 
