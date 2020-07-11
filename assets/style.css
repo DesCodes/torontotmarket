@@ -59,6 +59,12 @@ header {
 	align-items: center;
 }
 
+.logoBox a:hover {
+	background: #f2f1f1f1;
+	border-radius: 5px;
+	/*box-shadow: 0 0 20px rgba(0, 0, 0, .3);*/
+}
+
 .logo img {
 	max-width: 150px;
 }
@@ -114,7 +120,11 @@ nav ul li:last-child {
 nav ul li:hover {
 	background: #b16f8a;
 	text-decoration: underline;
-	/*color: #fff;*/
+	color: #fff;
+}
+
+nav ul li a:hover, nav ul li p:hover {
+	color: #fff;
 }
 
 nav ul li p {
@@ -181,7 +191,7 @@ nav ul li a, nav ul li p {
 .videoBox div {
 	display: flex;
 	justify-content: center;
-	max-height: 80%;
+/*	max-height: 80%;*/
 }
 
 iframe {
@@ -245,6 +255,10 @@ footer {
 .contactHeader h3 {
 	text-align: center;
 	padding: 15px;
+}
+
+.closeBox:hover {
+	color: #b16f8a;
 }
 
 .contactHeader .closeBox {
