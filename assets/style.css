@@ -198,6 +198,14 @@ nav ul li a, nav ul li p {
 	padding: 0 55px;
 }
 
+.carousel-cell {
+	width: 100%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 /*main video area*/
 .videoBox {
