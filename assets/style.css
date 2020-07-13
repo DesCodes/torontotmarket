@@ -61,6 +61,18 @@ header {
 	font-size: 25px;
 }
 
+.translation span {
+	cursor: pointer;
+}
+
+.chinese, .translation .english {
+	display: none;
+}
+
+.translation .chinese {
+	display: block;
+}
+
 .logoBox a {
 	align-items: center;
 }
@@ -296,7 +308,7 @@ footer {
 
 .contactUs form {
 	display: grid;
-	grid-gap: 10px;
+	/*grid-gap: 10px;*/
 	grid-template-columns: 1fr 1fr;
 	padding: 10px;
 	margin: 25px;
@@ -312,11 +324,33 @@ footer {
 
 .contactUs form input {
 	padding: 10px;
+	margin-bottom: 14px;
 }
 
 .contactUs form textarea {
 	resize: none;
 	padding: 15px 10px;
+	margin-bottom: 20px;
+}
+
+.contactUs form label[for="name"] {
+	grid-column-start: 1;
+}
+
+.contactUs form label[for="email"] {
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+.contactUs form input[name="name"] {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	margin-right: 12px;
+}
+
+.contactUs form input[name="email"] {
+	grid-column-start: 2;
+	grid-row-start: 2;
 }
 
 .contactUs form textarea, .contactUs form button[type='submit'] {

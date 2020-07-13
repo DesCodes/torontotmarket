@@ -14,12 +14,14 @@
 	<div class="wrapper">
 		<header>
 		<div class="translation">
-			<a href="chinese.html">中文</a>
+			<!-- <a href="chinese.html">中文</a> -->
+			<span class="chinese">中文</span>
+			<span class="english">English</span>
 		</div>
 
 		<div class="headerBox">
 			<div class="logoBox">
-				<a href="">
+				<a href="index.html">
 					<figure class="logo">
 						<img src="./assets/Logo_trans.png" alt="Toronto T Market logo">
 					</figure>
@@ -33,31 +35,39 @@
 				<ul>
 					<li>
 						<a href="https://shoptorontotmarket.ca/" target="_blank">
-							Weekend Promo
+							<span class="english">Weekend Promo</span>
+							<span class="chinese">快閃五六日</span>
 						</a>
 					</li>
 					<li>
 						<a href="wholesale.html">
-							Wholesale Opportunities
+							<span class="english">Wholesale Opportunities</span>
+							<span class="chinese">創業批發代理</span>
 						</a>
 					</li>
 					<li>
 						<a href="https://shoptorontotmarket.ca/collections/lifestyle-shopping" target="_blank">
-							Lifestyle Shopping
+							<span class="english">Lifestyle Shopping</span>
+							<span class="chinese">生活百貨</span>
 						</a>
 					</li>
 					<li>
 						<a href="https://shoptorontotmarket.ca/collections/pets-world" target="_blank">
-							Pet's World
+							<span class="english">Pet's World</span>
+							<span class="chinese">寵物奴帝</span>
 						</a>
 					</li>
 					<li>
 						<a href="https://shoptorontotmarket.ca/collections/supermarket" target="_blank">
-							Supermarket
+							<span class="english">Supermarket</span>
+							<span class="chinese">超市入口</span>
 						</a>
 					</li>
 					<li>
-						<p class="contactUsLink">Contact Us</p>
+						<p class="contactUsLink">
+							<span class="english">Contact Us</span>
+							<span class="chinese">聯絡我們</span>
+						</p>
 					</li>
 					<li class="sideBarBox hideMenu">
 						<i class="fas fa-bars bar"></i>
@@ -120,7 +130,8 @@
 
 	<div class="contactUs">
 		<div class="contactHeader">
-			<h3>Contact Us</h3>
+			<h3 class="english">Contact Us</h3>
+			<h3 class="chinese">聯絡我們</h3>
 
 			<div class="closeBox">
 				<i class="fas fa-times"></i>
@@ -128,12 +139,27 @@
 		</div>
 
 		<form action="https://submit-form.com/04C8Wpl7eZFZ_WjtJElrL" target="_self">
-	   <!-- All elements must have a name attribute -->
-	   <input type="text" name="name" placeholder="Name" required="true">
-	   <input type="text" name="email" placeholder="Email" required="true">
-	   <textarea name="message" placeholder="Message" required="true"></textarea>
-	   <!-- A button of type submit -->
-	   <button type="submit">Submit</button>
+			<label for="name">
+				<span class="english">Name</span>
+				<span class="chinese">名稱</span>
+			</label>
+	  	<input type="text" name="name" required="true">
+
+	  	<label for="email">
+	  		<span class="english">Email</span>
+	  		<span class="chinese">電子郵件</span>
+	  	</label>
+		  <input type="text" name="email" required="true">
+
+		  <label for="Message">
+		  	<span class="english">Message</span>
+		  	<span class="chinese">信息</span>
+		  </label>
+		  <textarea name="message" required="true"></textarea>
+		  <button type="submit">
+		   	<span class="english">Submit</span>
+		   	<span class="chinese">提交</span>
+		  </button>
 		</form>
 	</div>
 </div>
