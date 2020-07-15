@@ -192,6 +192,10 @@ nav ul li a, nav ul li p {
 	align-items: center;
 }
 
+.flickity-page-dots {
+	left: 0;
+}
+
 .imgSlider {
 	margin: 8px auto;
 }
