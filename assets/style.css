@@ -23,6 +23,9 @@ body {
 	background: #fff;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
+.innerWrapper {
+	margin: 20px 80px;
+}
 
 /*general properties*/
 h1, .translation a {
@@ -84,7 +87,8 @@ header {
 }
 
 .logo img {
-	max-width: 150px;
+	/*max-width: 150px;*/
+	max-width: 180px;
 }
 /*.logo {
 	border: 1px dotted black;
@@ -164,14 +168,19 @@ nav ul li a, nav ul li p {
 .announcementBar {
 	margin: 0 55px;
 	height: 44px;
-	background: #e8e8e8;
+	/*background: #e8e8e8;*/
+	background: rgb(131,58,180);
+	background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
 }
 
 .announcementBar h2 {
 	color: #000;
 	text-align: center;
 	padding: 8px;
-	background: #e8e8e8;
+	/*background: #e8e8e8;*/
 	/*background: rgb(131,58,180);
 	background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 	background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -251,7 +260,8 @@ nav ul li a, nav ul li p {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 20px;
-	padding: 80px;
+	/*padding: 80px;*/
+	margin-bottom: 50px;
 }
 
 .videoBox div {
@@ -263,6 +273,43 @@ nav ul li a, nav ul li p {
 iframe {
 	width: 100%;
 	/*max-width: 600px;*/
+}
+
+.business {
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: #7a7a7a;
+}
+
+h2.business {
+	/*color: black;*/
+	font-size: 23px;
+	background: #e7a5c0;
+	padding: 10px 10px 10px 0;
+}
+
+
+/*wholesale Products*/
+.wholesaleProducts,
+.wholesaleProducts div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+}
+
+.wholesaleProducts div figure {
+	max-width: 500px;
+	padding: 25px;
+}
+
+.wholesaleProducts img {
+	width: 100%;
+}
+
+.wholesaleProducts h4 {
+	text-align: center;
 }
 
 
