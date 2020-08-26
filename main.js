@@ -24,7 +24,12 @@ $(document).ready(function(){
 
 	// contact us function
 	$('.closeBox, .contactUsLink').on('click', function(){
-		console.log('l')
 		$('.contactUs').toggleClass('showContactUs')
 	});
+
+	// scroll top function
+	$('.upArrowBox').on('click', function(){
+		console.log('ji')
+		$('html, body').animate({scrollTop: 0}, 'slow')
+	})
 });
