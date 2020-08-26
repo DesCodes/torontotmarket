@@ -299,9 +299,17 @@ h2.business {
 	align-items: center;
 }
 
+.wholesaleProducts div {
+	border: 1.5px solid #f8f0d8;
+	border-radius: 5px;
+	width: 100%;
+	margin: 20px;
+}
+
 .wholesaleProducts div figure {
 	max-width: 500px;
 	padding: 25px;
+	margin: 35px;
 }
 
 .wholesaleProducts img {
