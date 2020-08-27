@@ -19,8 +19,15 @@ $(document).ready(function(){
 	// close button function for wholesale videoContainer
 	$('.videoContainer .cross').on('click', function(){
 		$('.videoContainer').css('z-index', '-100');
-		// $('iframe').attr('src', $('iframe').attr('src'));
 
+		// saves the original iframe src in a variable
+		let url = $(this).next().attr('src');
+		
+		// empties the iframe src to stop the video from playing
+		$(this).next().attr('src', '');
+
+		// reassigns the copied iframe src back
+		$(this).next().attr('src', url);
 	});
 
 	// display product video for wholesale page
