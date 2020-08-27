@@ -14,6 +14,20 @@ $(document).ready(function(){
 		$('.chinese').hide();
 		$('.translation .chinese').show();
 		$('.translation .english').hide();
+	});
+
+	// close button function for wholesale videoContainer
+	$('.videoContainer .cross').on('click', function(){
+		$('.videoContainer').css('z-index', '-100');
+		// $('iframe').attr('src', $('iframe').attr('src'));
+
+	});
+
+	// display product video for wholesale page
+	$('.wholesaleProducts p').on('click', function(){
+		// console.log(this + '.videoContainer')
+		// $(this + '.videoContainer').css('z-index', '100');
+		$(this).next().css('z-index', '100');
 	})
 
 
@@ -29,7 +43,6 @@ $(document).ready(function(){
 
 	// scroll top function
 	$('.upArrowBox').on('click', function(){
-		console.log('ji')
 		$('html, body').animate({scrollTop: 0}, 'slow')
 	})
 });
