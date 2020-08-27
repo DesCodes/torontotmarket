@@ -614,11 +614,23 @@ footer {
 		display: flex;
 		font-size: 25px;
 	}
+
+	.wholesaleProducts div .videoContainer {
+		width: 600px;
+		height: 400px;
+		margin-left: -300px;
+		bottom: 0;
+		top: unset;
+	}
 }
 
 @media screen and (max-width: 1000px) {
 	.videoBox {
 		grid-template-columns: 1fr;
+	}
+
+	.wholesaleProducts div .videoContainer {
+		margin-left: -322px;
 	}
 }
 
@@ -637,6 +649,12 @@ footer {
 
 	.sideBarBox {
 		top: -39px;
+	}
+
+	.wholesaleProducts div .videoContainer {
+		margin-left: -259px;
+		width: 450px;
+		height: 300px;
 	}
 }
 
