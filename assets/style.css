@@ -102,7 +102,21 @@ header {
 
 nav {
 	position: relative;
-	align-items: center;
+	/*align-items: center;*/
+}
+
+.innerNavContainer	{
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	max-width: 800px;
+	text-align: center;
 }
 
 .showMenu {
@@ -134,11 +148,16 @@ nav ul li {
 	/*padding: 13px;*/
 	/*background: #364c79;*/
 	background: #e8e8e8;
+	display: grid;
 }
 
-nav ul li:last-child {
+/*nav ul li:last-child {
+	background: none;
+}*/
+.sideBarBox {
 	background: none;
 }
+
 
 nav ul li:hover {
 	background: #b16f8a;
@@ -157,7 +176,8 @@ nav ul li p {
 nav ul li a, nav ul li p {
 	/*color: #fff;*/
 	color: #000;
-	padding: 10px;
+	/*padding: 10px;*/
+	padding: 3.5px 10px;
 	align-self: center;
 	font-weight: 700;
 	/*padding: 15px;*/
@@ -593,6 +613,8 @@ footer {
 		z-index: 10;
 		transition: all .5s ease-in-out;
 		-webkit-transition: all .5s ease-in-out;
+		grid-template-columns: 1fr;
+		text-align: left;
 	}
 
 	nav ul li {
